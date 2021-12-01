@@ -1,0 +1,232 @@
+[
+    {
+        "id": 1,
+        "apartment_name": "Einti",
+        "address": "14 Cody Street",
+        "contact": "915-804-5838",
+        "rent": "Rs. 39929.85",
+        "tenants": [
+            {
+                "name": "Emilio Scad",
+                "contact": "519-859-6791",
+                "email": "escad0@ucsd.edu"
+            }
+        ],
+        "rooms": 1
+    },
+    {
+        "id": 2,
+        "apartment_name": "Blogtag",
+        "address": "095 Kedzie Court",
+        "contact": "836-385-8258",
+        "rent": "Rs. 18500.98",
+        "tenants": [
+            {
+                "name": "Marlon MacGlory",
+                "contact": "599-560-6277",
+                "email": "mmacglory0@google.com.au"
+            }
+        ],
+        "rooms": 2
+    },
+    {
+        "id": 3,
+        "apartment_name": "Oyondu",
+        "address": "46768 Independence Way",
+        "contact": "732-575-0809",
+        "rent": "Rs. 55304.64",
+        "tenants": [
+            {
+                "name": "Elyn Madrell",
+                "contact": "868-893-0777",
+                "email": "emadrell0@ed.gov"
+            },
+            {
+                "name": "Jennine Freezor",
+                "contact": "710-447-7135",
+                "email": "jfreezor1@netvibes.com"
+            }
+        ],
+        "rooms": 2
+    },
+    {
+        "id": 4,
+        "apartment_name": "Voomm",
+        "address": "1 Namekagon Parkway",
+        "contact": "889-862-6968",
+        "rent": "Rs. 62560.59",
+        "tenants": [
+            {
+                "name": "Lucina Marages",
+                "contact": "839-505-6681",
+                "email": "lmarages0@globo.com"
+            },
+            {
+                "name": "Nomi Soreau",
+                "contact": "524-189-6534",
+                "email": "nsoreau1@people.com.cn"
+            },
+            {
+                "name": "Tracie Bodman",
+                "contact": "506-874-4580",
+                "email": "tbodman2@forbes.com"
+            }
+        ],
+        "rooms": 3
+    },
+    {
+        "id": 5,
+        "apartment_name": "Skynoodle",
+        "address": "46 Huxley Alley",
+        "contact": "641-558-7837",
+        "rent": "Rs. 74716.93",
+        "tenants": [
+            {
+                "name": "Jarib Pacitti",
+                "contact": "579-411-0853",
+                "email": "jpacitti0@free.fr"
+            },
+            {
+                "name": "Kiele Sapwell",
+                "contact": "769-553-3070",
+                "email": "ksapwell1@oaic.gov.au"
+            },
+            {
+                "name": "Brewer Domniney",
+                "contact": "770-667-7733",
+                "email": "bdomniney2@google.ca"
+            }
+        ],
+        "rooms": 3
+    },
+    {
+        "id": 6,
+        "apartment_name": "Skiba",
+        "address": "0343 Carioca Park",
+        "contact": "779-922-5746",
+        "rent": "Rs. 70730.18",
+        "tenants": [
+            {
+                "name": "Georgie O'Doireidh",
+                "contact": "301-879-5155",
+                "email": "godoireidh0@reference.com"
+            },
+            {
+                "name": "Gwyneth Keer",
+                "contact": "332-608-8395",
+                "email": "gkeer1@engadget.com"
+            },
+            {
+                "name": "Tess Franssen",
+                "contact": "954-922-5256",
+                "email": "tfranssen2@sina.com.cn"
+            },
+            {
+                "name": "Rudolfo Rentilll",
+                "contact": "701-448-6835",
+                "email": "rrentilll3@privacy.gov.au"
+            }
+        ],
+        "rooms": 4
+    },
+    {
+        "id": 7,
+        "apartment_name": "Dabvine",
+        "address": "7 Dakota Parkway",
+        "contact": "542-793-5914",
+        "rent": "Rs. 32177.39",
+        "tenants": [
+            {
+                "name": "Othella Klaassens",
+                "contact": "580-426-8980",
+                "email": "oklaassens0@livejournal.com"
+            },
+            {
+                "name": "Seana Woodstock",
+                "contact": "456-440-1772",
+                "email": "swoodstock1@icq.com"
+            },
+            {
+                "name": "Valentia Dable",
+                "contact": "605-674-7297",
+                "email": "vdable2@nhs.uk"
+            },
+            {
+                "name": "Guglielmo Kettlestringe",
+                "contact": "138-956-9052",
+                "email": "gkettlestringe3@cnet.com"
+            }
+        ],
+        "rooms": 4
+    },
+    {
+        "id": 8,
+        "apartment_name": "Gevee",
+        "address": "6305 Melvin Court",
+        "contact": "882-834-6764",
+        "rent": "Rs. 17614.26",
+        "tenants": [
+            {
+                "name": "Robenia Ludl",
+                "contact": "789-481-7372",
+                "email": "rludl0@timesonline.co.uk"
+            },
+            {
+                "name": "Marlin Edlyn",
+                "contact": "317-601-8322",
+                "email": "medlyn1@istockphoto.com"
+            },
+            {
+                "name": "Adel Vescovini",
+                "contact": "975-374-9842",
+                "email": "avescovini2@posterous.com"
+            }
+        ],
+        "rooms": 4
+    },
+    {
+        "id": 9,
+        "apartment_name": "Twimbo",
+        "address": "19118 Ohio Hill",
+        "contact": "544-238-0628",
+        "rent": "Rs. 24723.74",
+        "tenants": [
+            {
+                "name": "Mira Dukes",
+                "contact": "732-203-7281",
+                "email": "mdukes0@simplemachines.org"
+            }
+        ],
+        "rooms": 4
+    },
+    {
+        "id": 10,
+        "apartment_name": "Divape",
+        "address": "2 Farwell Crossing",
+        "contact": "865-717-9608",
+        "rent": "Rs. 74879.21",
+        "tenants": [
+            {
+                "name": "Nehemiah Enrietto",
+                "contact": "649-688-9069",
+                "email": "nenrietto0@apple.com"
+            },
+            {
+                "name": "Dulci Paramore",
+                "contact": "103-147-5304",
+                "email": "dparamore1@istockphoto.com"
+            },
+            {
+                "name": "Mirella Arkell",
+                "contact": "884-147-1576",
+                "email": "markell2@ifeng.com"
+            },
+            {
+                "name": "Maryjo Duthie",
+                "contact": "808-608-8799",
+                "email": "mduthie3@feedburner.com"
+            }
+        ],
+        "rooms": 4
+    }
+]
