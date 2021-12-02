@@ -25,6 +25,7 @@ const emptyApartment = {
   rent: "",
   tenants: [],
   rooms: 0,
+  roomsAvl: 0,
 };
 
 const Form = () => {
@@ -51,20 +52,36 @@ const Form = () => {
       return copy;
     });
   };
-  const onSubmit = () => {
-    alert("Tenant added successfully");
+  const addTenants = () => {
+    setApartmentData((a) => {
+      const copy = JSON.parse(JSON.stringify(a));
+      copy.tenants.push({ name: "", contact: "", email: "" });
+      return copy;
+    });
+    setEditTenant((a) => {
+      const copy = JSON.parse(JSON.stringify(a));
+      copy[apartmentData.tenants.length] = true;
+      return copy;
+    });
   };
+
   const handleTenantEdit = (index, value) => {
     setEditTenant({
       ...editTenant,
       [index]: value,
     });
   };
-
+  console.log(apartmentData)
   const deleteTenant = (index) => {
     setApartmentData((a) => {
       const copy = JSON.parse(JSON.stringify(a));
-      delete copy.tenants[index];
+      copy.tenants.splice(index, 1);
+      return copy;
+    });
+
+    setEditTenant((a) => {
+      const copy = JSON.parse(JSON.stringify(a));
+      delete copy[index];
       return copy;
     });
   };
@@ -112,14 +129,29 @@ const Form = () => {
       />
       <TextField
         id="filled-basic"
-        label="Room"
+        label="Rooms"
         variant="filled"
         value={apartmentData.rooms}
         disabled
         onChange={(e) => updateApartmentData("rooms", e.target.value)}
       />
-      <Button variant="contained" onClick={onSubmit}>
-        Add
+      <TextField
+        id="filled-basic"
+        label="Rooms Available"
+        variant="filled"
+        value={apartmentData.rooms - apartmentData.tenants.length}
+        disabled
+        onChange={(e) => updateApartmentData("roomsAvl", e.target.value)}
+      />
+      <Button
+        variant="contained"
+        disabled={apartmentData.rooms === apartmentData.tenants.length}
+        onClick={() => {
+          addTenants();
+        }}
+      >
+        {" "}
+        Add Tenant
       </Button>
       {apartmentData.tenants.map((tenant, index) => {
         return (
