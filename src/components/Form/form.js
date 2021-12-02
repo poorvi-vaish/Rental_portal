@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { useParams } from "react-router";
-import info from "../InfoCard/MOCK_DATA (4).json";
+import info from "../List/MOCK_DATA (4).json";
 import { Box } from "@mui/system";
 
 const useStyles = makeStyles({
@@ -15,6 +15,11 @@ const useStyles = makeStyles({
     width: "50%",
     margin: "auto",
   },
+  buttonStyles: {
+    display: "flex",
+    justifyContent: "space-between",
+    margin: "10px 0px",
+  }
 });
 
 const emptyApartment = {
@@ -71,7 +76,7 @@ const Form = () => {
       [index]: value,
     });
   };
-  console.log(apartmentData)
+  console.log(apartmentData);
   const deleteTenant = (index) => {
     setApartmentData((a) => {
       const copy = JSON.parse(JSON.stringify(a));
@@ -95,6 +100,7 @@ const Form = () => {
       autoComplete="off"
       className={classes.root}
     >
+    <h1>Apartment Details</h1>
       <TextField
         id="filled-basic"
         label="Apartment Name"
@@ -144,6 +150,9 @@ const Form = () => {
         onChange={(e) => updateApartmentData("roomsAvl", e.target.value)}
       />
       <Button
+        sx={{
+          margin: "10px 0px",
+        }}
         variant="contained"
         disabled={apartmentData.rooms === apartmentData.tenants.length}
         onClick={() => {
@@ -156,6 +165,7 @@ const Form = () => {
       {apartmentData.tenants.map((tenant, index) => {
         return (
           <Box className={classes.root}>
+          <h2>Tenants Details</h2>
             <TextField
               id="filled-basic"
               label="Name"
@@ -182,8 +192,11 @@ const Form = () => {
               disabled={!Boolean(editTenant[index])}
               onChange={(e) => updateTenantData(index, "email", e.target.value)}
             />
-            <div>
+            <div className={classes.buttonStyles}>
               <Button
+                sx={{
+                  width: "30%",
+                }}
                 variant="contained"
                 onClick={() => {
                   handleTenantEdit(index, true);
@@ -192,6 +205,9 @@ const Form = () => {
                 Edit
               </Button>
               <Button
+                sx={{
+                  width: "30%",
+                }}
                 variant="contained"
                 onClick={() => {
                   handleTenantEdit(index, false);
@@ -200,6 +216,9 @@ const Form = () => {
                 Save
               </Button>
               <Button
+                sx={{
+                  width: "30%",
+                }}
                 variant="contained"
                 onClick={() => {
                   deleteTenant(index);

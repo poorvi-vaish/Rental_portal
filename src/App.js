@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Details from "./components/Modal/modal";
-import BasicTable from './components/InfoCard/list';
+import BasicTable from './components/List/list';
 import Form from './components/Form/form';
 
 const App = () => {
